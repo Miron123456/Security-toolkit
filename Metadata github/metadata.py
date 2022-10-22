@@ -19,6 +19,7 @@ class Ui_MetadataRemover(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         MetadataRemover.setFont(font)
+        MetadataRemover.setWindowTitle("Multifunctional Security Tool")
         MetadataRemover.setLocale(QtCore.QLocale(QtCore.QLocale.English, QtCore.QLocale.UnitedStates))
         self.centralwidget = QtWidgets.QWidget(MetadataRemover)
         self.centralwidget.setLocale(QtCore.QLocale(QtCore.QLocale.English, QtCore.QLocale.UnitedStates))
@@ -322,12 +323,11 @@ class Ui_MetadataRemover(object):
         MetadataRemover.setStatusBar(self.statusbar)
 
         self.retranslateUi(MetadataRemover)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MetadataRemover)
 
     def retranslateUi(self, MetadataRemover):
         _translate = QtCore.QCoreApplication.translate
-        MetadataRemover.setWindowTitle(_translate("MetadataRemover", "MainWindow"))
         self.label.setText(_translate("MetadataRemover", "File  path:"))
         self.label_3.setText(_translate("MetadataRemover", "Save  path:"))
         self.select_img.setText(_translate("MetadataRemover", "📁"))
